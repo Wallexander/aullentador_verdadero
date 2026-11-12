@@ -5,15 +5,100 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/textView2"
+        android:layout_width="769dp"
+        android:layout_height="80dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:text="Inicio de sesion"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="52sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        tools:ignore="HardcodedText,VisualLintBounds,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="553dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="43sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.672"
+        app:backgroundTint="@color/white"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,VisualLintBounds,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="332dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="100dp"
+        android:text="contraseña"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="43sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="555dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="43sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,HardcodedText,LabelFor,MissingConstraints,VisualLintBounds,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="301dp"
+        android:layout_height="83dp"
+        android:text="username"
+        android:textAlignment="center"
+        android:textSize="43sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.542"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="788dp"
+        android:layout_height="110dp"
+        android:text="iniciar"
+        android:textSize="43sp"
+        app:backgroundTint="#4CAF50"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds,TextContrastCheck,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="1069dp" />
+
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
