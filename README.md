@@ -1,2 +1,2 @@
 # codigo del microcontrolador
-#(sin terminar o hacer)
+(sin terminar o hacer)
